@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 전자잉크용: 흑백 고대비, 화면 전환 애니메이션 없음 -->
+    <style name="Theme.CremaCover" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">#000000</item>
+        <item name="colorPrimaryDark">#000000</item>
+        <item name="colorAccent">#000000</item>
+        <item name="colorControlNormal">#000000</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:textColorPrimary">#000000</item>
+        <item name="android:textColorSecondary">#333333</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="buttonStyle">@style/EinkButton</item>
+    </style>
+
+    <style name="EinkButton" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:background">@drawable/btn_eink</item>
+        <item name="android:textColor">@color/btn_text</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:minHeight">56dp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+</resources>

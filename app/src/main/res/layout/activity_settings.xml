@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView style="@style/SettingLabel" android:text="@string/fit_mode" />
+
+        <RadioGroup
+            android:id="@+id/fit_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/fit" style="@style/SettingRadio" android:text="@string/fit" />
+            <RadioButton android:id="@+id/fill" style="@style/SettingRadio" android:text="@string/fill" />
+        </RadioGroup>
+
+        <TextView style="@style/SettingLabel" android:text="@string/background" />
+
+        <RadioGroup
+            android:id="@+id/bg_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton android:id="@+id/bg_white" style="@style/SettingRadio" android:layout_width="0dp" android:layout_weight="1" android:text="@string/bg_white" />
+            <RadioButton android:id="@+id/bg_black" style="@style/SettingRadio" android:layout_width="0dp" android:layout_weight="1" android:text="@string/bg_black" />
+        </RadioGroup>
+
+        <TextView style="@style/SettingLabel" android:text="@string/accessibility_section" />
+
+        <TextView
+            android:id="@+id/accessibility_status"
+            style="@style/SettingHelp"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/open_accessibility"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/accessibility_open" />
+
+        <TextView style="@style/SettingLabel" android:text="@string/reset_section" />
+
+        <LinearLayout style="@style/SettingRow">
+            <Button
+                android:id="@+id/reset_sleep"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/reset_sleep" />
+            <Button
+                android:id="@+id/reset_poweroff"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:text="@string/reset_poweroff" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/reset_status"
+            style="@style/SettingHelp"
+            android:text="@string/reset_help" />
+
+        <Button
+            android:id="@+id/open_diagnostics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="@string/diagnostics" />
+        <TextView
+            android:id="@+id/version"
+            style="@style/SettingHelp"
+            android:layout_marginTop="32dp"
+            android:gravity="center" />
+    </LinearLayout>
+</ScrollView>
