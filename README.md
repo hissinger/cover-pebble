@@ -13,7 +13,7 @@
 
 ## 1. 설치
 
-앱 파일(`CoverPebble-1.0.0.apk`)을 페블에 옮겨 설치합니다.
+[릴리스 페이지](https://github.com/hissinger/cover-pebble/releases/latest)에서 앱 파일(`CoverPebble-1.0.0.apk`)을 받아 페블에 옮겨 설치합니다.
 
 1. 페블을 컴퓨터에 USB로 연결합니다. Mac은 [OpenMTP](https://openmtp.ganeshrvel.com/) 같은 파일 전송 앱이 필요합니다.
 2. `CoverPebble-1.0.0.apk`를 페블 내장메모리(예: `Download` 폴더)에 복사합니다.
